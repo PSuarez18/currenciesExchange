@@ -1,0 +1,14 @@
+.secondary-button {
+  background-color: var(--p);
+  border: 1px solid var(--s);
+  color: var(--b);
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.secondary-button:hover {
+  background-color: var(--s);
+  border-color: var(--a);
+  color: var(--t);
+  transform: scale(1.1);
+}
