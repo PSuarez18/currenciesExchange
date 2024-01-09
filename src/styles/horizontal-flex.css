@@ -1,6 +1,7 @@
 .horizontal-flex {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  align-items: "center";
+
+  margin-top: 0.1rem;
 }
