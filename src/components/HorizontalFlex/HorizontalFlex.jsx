@@ -1,9 +1,18 @@
 import React from "react";
 import "../../styles/horizontal-flex.css";
-function HorizontalFlex(props) {
-  //add spacer of size props.childrenMarginRight between each child
-
-  return <div className="horizontal-flex">{props.children}</div>;
+function HorizontalFlex({ children, spacing, height, width }) {
+  return (
+    <div
+      className="horizontal-flex"
+      style={{
+        justifyContent: spacing ? spacing : "center",
+        height: height ? height : "auto",
+        width: width ? width : "auto",
+      }}
+    >
+      {children}
+    </div>
+  );
 }
 
 export default HorizontalFlex;
