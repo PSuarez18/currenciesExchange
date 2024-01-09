@@ -9,14 +9,14 @@ function Home() {
   return (
     <div className="home-page">
       <header>
+
+      </header>
+      <main>
         <HeaderXL headerXL="Home" />
         <HorizontalFlex childrenMarginRight={"2 rem"}>
           <PrimaryButton label="Primary Button" />
           <SecondaryButton label="Secondary Button" />
         </HorizontalFlex>
-
-      </header>
-      <main>
 
       </main>
       <footer>
