@@ -5,6 +5,7 @@
     --p: rgb(31, 63, 112);
     --s: rgb(123, 167, 229);
     --a: rgb(26, 99, 209);
+    --backgroundfooter: rgba(15, 23, 33, 0.05);
   }
 }
 /*https://www.realtimecolors.com/?colors=eaeef5-030508-8fb0e0-1a4582-3079e5&fonts=Poppins-Noto%20Sans*/
@@ -15,6 +16,7 @@
     --p: rgb(143, 176, 224);
     --s: rgb(26, 69, 130);
     --a: rgb(48, 121, 229);
+    --backgroundfooter: hsl(218, 35%, 94%, 5%)
   }
 }
 :root {
