@@ -6,13 +6,15 @@
 }
 
 header {
-  height: 10%;
+  height: fit-content;
   width: 100%;
+  z-index: 1000;
 }
 
 main {
   height: 75%;
   width: 100%;
+  z-index: 999;
 }
 
 footer {

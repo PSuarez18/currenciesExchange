@@ -53,3 +53,11 @@ button {
   text-transform: uppercase;
   white-space: nowrap;
 }
+
+a {
+  color: var(--a);
+  text-align: center;
+  height: fit-content;
+  margin: 0.5rem;
+  text-decoration: none;
+}

@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #fff;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 0.5rem #00000020;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  display: flex;
+}
+.navigation-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 0rem;
+}
+
+.switches {
+  display: flex;
+  width: fit-content;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 0 0rem;
+}
