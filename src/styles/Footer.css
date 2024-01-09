@@ -1,0 +1,94 @@
+/*contenedor principal responsive*/
+.footer-column {
+    display: grid;
+    background-color: var(--backgroundfooter);
+    color: var(--t);
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+/*comportamiento del contenedor principal del footer  */
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.footer-nav h5 {
+    font-size: 0.9rem;
+}
+
+.container-currencies,
+.container-info,
+.container-social,
+.container-copyright {
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 4px;
+    padding: 4px;
+}
+
+.container-copyright {
+    margin: auto;
+    padding: 0;
+}
+
+.container-copyright p {
+    margin: 0.3rem;
+}
+
+/* Comportamiento de la direccion de los elementos Links y los elementos Anchor */
+.container-currencies a,
+.container-info a {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    transition: transform 0.5s ease;
+}
+
+.container-currencies a:hover,
+.container-info a:hover {
+    animation: scaleAnimation 1s ease infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.container-currencies a,
+.container-info a {
+    text-decoration: none;
+}
+
+.container-currencies a:active,
+.container-info a:active,
+.container-currencies a:visited,
+.container-info a:visited,
+.container-currencies a:link,
+.container-info a:link {
+    color: var(--t);
+
+}
+
+/* tamaño de las img png que dan la sensacion de un icono y su comportamiento*/
+.container-social img {
+    height: 12%;
+    width: 12%;
+    margin: 4px;
+    padding: 4px;
+}
+
+.container-social a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
