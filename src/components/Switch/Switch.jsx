@@ -2,11 +2,7 @@ import React from "react";
 import "../../styles/switch.css";
 function Switch({ contentLeft, contentRight, onClick }) {
   return (
-    <div
-      style={{
-        margin: "0 0rem 0rem 02rem",
-      }}
-    >
+    <div className="switch-container">
       <div className="button r" id="button-3" onClick={onClick}>
         <input type="checkbox" className="checkbox" />
         <div className="knobs">

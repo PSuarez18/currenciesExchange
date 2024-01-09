@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import HorizontalFlex from "../HorizontalFlex/HorizontalFlex";
 import Searchbar from "../Searchbar/Searchbar";
 import Logo from "../Logo/Logo";
 import "../../styles/navbar.css";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
 import ThemeSwitch from "../ThemeSwitch.jsx/ThemeSwitch";
 import { Link } from "react-router-dom";
-import Header from "../Header/HeaderXL";
 
 function Navbar() {
   //if window width is less than 600px, then display hamburger menu
@@ -17,11 +15,11 @@ function Navbar() {
     });
   }, [windowWidth]);
   return (
-    <HorizontalFlex spacing={"space-around"} height={"3rem"} width={"100%"}>
+    <div className="navbar">
       <Logo />
       <Searchbar onClick={searchFunc} />
-      {windowWidth < 600 ? hamburgerMenu() : horizontalFlex()}
-    </HorizontalFlex>
+      {windowWidth < 700 ? hamburgerMenu() : wide()}
+    </div>
   );
 }
 
@@ -32,19 +30,18 @@ function searchFunc() {
 }
 
 function hamburgerMenu() {
-  return <Header Header="BURGER" />;
+  return <>burger</>;
 }
-function horizontalFlex() {
+function wide() {
   return (
-    <HorizontalFlex spacing={"space-between"}>
-      <HorizontalFlex spacing={"space-around"}>
-        <Link to="/">Home</Link>
-        <Link to="/history">History</Link>
+    <>
+      <nav className="navigation-links">
+        <Link to="/">Home</Link> <Link to="/history">History</Link>
         <Link to="/contact">Contact</Link>
-      </HorizontalFlex>
-
-      <LanguageSwitch />
-      <ThemeSwitch />
-    </HorizontalFlex>
+      </nav>
+      <div className="switches">
+        <LanguageSwitch /> <ThemeSwitch />
+      </div>
+    </>
   );
 }
