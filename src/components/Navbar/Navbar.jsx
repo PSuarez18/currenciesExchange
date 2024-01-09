@@ -6,7 +6,7 @@ import "../../styles/navbar.css";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
 import ThemeSwitch from "../ThemeSwitch.jsx/ThemeSwitch";
 import { Link } from "react-router-dom";
-import Header from "../Header/Header";
+import Header from "../Header/HeaderXL";
 
 function Navbar() {
   //if window width is less than 600px, then display hamburger menu

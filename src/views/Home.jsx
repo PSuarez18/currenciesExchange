@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header/Header.jsx";
+import HeaderXL from "../components/Header/HeaderXL.jsx";
 import PrimaryButton from "../components/PrimaryButton/PrimaryButton.jsx";
 import SecondaryButton from "../components/SecondaryButton/SecondaryButton.jsx";
 import HorizontalFlex from "../components/HorizontalFlex/HorizontalFlex.jsx";
@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="home-page">
       <Navbar />
-      <Header Header="Home" />
+      <HeaderXL Header="Home" />
       <HorizontalFlex childrenMarginRight={"2 rem"}>
         <PrimaryButton label="Primary Button" />
         <SecondaryButton label="Secondary Button" />
