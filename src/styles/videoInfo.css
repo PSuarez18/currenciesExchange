@@ -10,8 +10,8 @@
 }
 
 .frame-video {
-    min-width: 20.5rem;
-    min-height: 12rem;
+    min-width: fit-content;
+    min-height: fit-content;
     padding: 0.1rem;
 }
 

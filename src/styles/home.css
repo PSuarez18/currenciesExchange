@@ -16,7 +16,7 @@ main {
   height: 75%;
   width: 100%;
   z-index: 999;
-  align-items: start;
+  align-items: center;
 }
 
 footer {
@@ -28,14 +28,27 @@ footer {
   position: absolute;
   right: 0px;
 }
-.container-mainL{
+
+.container-mainL {
   position: absolute;
   left: 0px;
 }
+
 .container-mainR,
 .container-mainL {
-  position: fixed;
+
   height: fit-content;
   width: fit-content;
 }
 
+@media screen and (max-width: 743px) {
+  main {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+  .container-mainR,
+.container-mainL {
+  position: static;
+}
+}
