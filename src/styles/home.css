@@ -12,12 +12,30 @@ header {
 }
 
 main {
+  display: flex;
   height: 75%;
   width: 100%;
   z-index: 999;
+  align-items: start;
 }
 
 footer {
   height: 25%;
   width: 95vw;
 }
+
+.container-mainR {
+  position: absolute;
+  right: 0px;
+}
+.container-mainL{
+  position: absolute;
+  left: 0px;
+}
+.container-mainR,
+.container-mainL {
+  position: fixed;
+  height: fit-content;
+  width: fit-content;
+}
+

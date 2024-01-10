@@ -36,11 +36,13 @@ function wide() {
   return (
     <>
       <nav className="navigation-links">
-        <Link to="/">Home</Link> <Link to="/history">Historial</Link>
+        <Link to="/">Home</Link>
+        <Link to="/history">Historial</Link>
         <Link to="/contact">Contacto</Link>
       </nav>
       <div className="switches">
-        <LanguageSwitch /> <ThemeSwitch />
+        <LanguageSwitch />
+        <ThemeSwitch />
       </div>
     </>
   );

@@ -1,0 +1,21 @@
+
+.container-mediaVideo {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.frame-video {
+    min-width: 20.5rem;
+    min-height: 12rem;
+    padding: 0.1rem;
+}
+
+.container-mediaVideo iframe.frame-video {
+    border-radius: 8px;
+    box-shadow: 1px;
+}

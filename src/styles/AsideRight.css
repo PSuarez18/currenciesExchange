@@ -1,0 +1,26 @@
+.container-AsideRL {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0.5rem;
+}
+.articles {
+    max-width: 21rem; 
+    margin: 0;
+    
+}
+.article-title {
+    font-size: 1.12rem;
+    text-align: center;
+    font-weight: 700;
+    margin:  0.4rem 0;
+}
+.article-text {
+    font-size: 0.7rem;
+    text-align: left;
+    padding: 0.4rem;
+}
+
+  
