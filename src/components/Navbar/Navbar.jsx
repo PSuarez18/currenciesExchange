@@ -30,7 +30,17 @@ function searchFunc() {
 }
 
 function hamburgerMenu() {
-  return <>burger</>;
+  return (
+    <>
+      <div className="menu">
+        <Link to="/">Home</Link>
+        <Link to="/history">Historial</Link>
+        <Link to="/contact">Contacto</Link>
+        <LanguageSwitch />
+        <ThemeSwitch />
+      </div>
+    </>
+  );
 }
 function wide() {
   return (
