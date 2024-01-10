@@ -75,7 +75,7 @@ button {
 }
 
 a {
-  color: var(--p);
+  color: var(--a);
   text-align: center;
   height: fit-content;
   margin: 0.5rem;
