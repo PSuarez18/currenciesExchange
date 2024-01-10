@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #fff;
+  background-color: var(--t);
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
@@ -33,4 +33,12 @@
   justify-content: space-around;
   align-items: center;
   margin: 0 0 0 0rem;
+}
+.menu {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 0 0 0rem;
+  font-size: 1.5rem;
+  color: red;
+  background-color: orange;
 }
